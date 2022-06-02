@@ -1,0 +1,103 @@
+<main>
+  <div class="wrapper page-content">
+    <section class="settings-toys">
+      <div class="settings__sort">
+        <p class="settings__title">Сортировать</p>
+        <select name="sortSelect" class="sortSelect">
+          <option selected disabled>Сортировать</option>
+          <option value="increase">По возрвстанию</option>
+          <option value="decrease">По убыванию</option>
+          <option value="increaseWord">По названию от А до Я</option>
+          <option value="decreaseWord">По названию от Я до А</option>
+        </select>
+      </div>
+      <div class="setting__favorite-toys">
+        <p class="settings__title">Избранные</p>
+        <p class="favorite-toy__text">избанных игрушек: <snap class="favorite-toys__count">00</snap>/20</p>
+        <p class="favorite-toy__error hidden">Извините, все слоты заполнены</p>
+      </div>
+      <h2 class="settings__caption">Форма</h2>
+      <div class="settings__shapes">
+        <button data-shape="колокольчик" class="button shape-ball ">
+          <img class="shape-image" src="../../../assets/svg/bell.svg" alt="bell">
+          <p class="shape-text">Колокол</p>
+        </button>
+        <button data-shape="шар" class="button shape-ball ball">
+          <img class="shape-image" src="../../../assets/svg/ball.svg" alt="bell">
+          <p class="shape-text">Шар</p>
+        </button>
+        <button data-shape="шишка" class="button shape-ball cone">
+          <img class="shape-image" src="../../../assets/svg/cone.svg" alt="bell">
+          <p class="shape-text">Шишка</p>
+        </button>
+        <button data-shape="снежинка" class="button shape-ball snowflake">
+          <img class="shape-image" src="../../../assets/svg/snow.svg" alt="bell">
+          <p class="shape-text">Снежинка</p>
+        </button>
+        <button data-shape="фигурка" class="button shape-ball figurine">
+          <img class="shape-image" src="../../../assets/svg/snowflake.svg" alt="bell">
+          <p class="shape-text">Фигурка</p>
+        </button>
+      </div>
+      <h2 class="settings__caption">Количество экземпляров</h2>
+      <input type="range" min="1" max="12" step="1" value="1" class="settings__amount">
+      <div class="amount-text">
+        <p class="amount-text__min">1</p>
+        <p class="amount-text__max">12</p>
+      </div>
+      <h2 class="settings__caption">Год приобретения</h2>
+      <input type="range" min="1940" max="2020" step="10" value="1940" class="settings__year">
+      <div class="year-text">
+        <p class="year-text__min">1940</p>
+        <p class="year-text__max">2020</p>
+      </div>
+      <h2 class="settings__caption">Цвет</h2>
+      <div class="settings__color">
+        <button data-color="белый" class="button color-button white"></button>
+        <button data-color="желтый" class="button color-button yellow"></button>
+        <button data-color="красный" class="button color-button red"></button>
+        <button data-color="синий" class="button color-button blue"></button>
+        <button data-color="зелёный" class="button color-button green"></button>
+      </div>
+      <h2 class="settings__caption">Размер</h2>
+      <div class="settings__size">
+        <div class="big-size">
+          <input class="size-checkbox" name="size" type="checkbox" id="check-big" value="большой">
+          <label for="check-big">Большой</label>
+        </div>
+        <div class="midle-size">
+          <input class="size-checkbox" name="size" type="checkbox" id="check-midle" value="средний">
+          <label for="check-midle">Средний</label>
+        </div>
+        <div class="small-size">
+          <input class="size-checkbox" name="size" type="checkbox" id="check-small" value="малый">
+          <label for="check-small">Маленький</label>
+        </div>
+      </div>
+      <div class="settings__favorite">
+        <input class="size-checkbox" name="favorite" type="checkbox" id="check-favorite" class="settings__favorite">
+        <label for="check-favorite">Только любимые</label>
+      </div>
+      <div class="reset-buttons">
+        <button type="button" class="button button-reset reset-settings">Сбросить настройки</button>
+        <button type="button" class="button button-reset reset-filters">Сбросить фильтры</button>
+      </div>
+    </section>
+    <section class="toys"></section>
+  </div>
+</main>
+
+
+
+<template id="toysTemp">
+  <div class="toy">
+    <h3 class="toy__title"></h3>
+    <div class="toy__image"></div>
+    <p class="toy-text toy__amount"></p>
+    <p class="toy-text toy__year"></p>
+    <p class="toy-text toy__form"></p>
+    <p class="toy-text toy__color"></p>
+    <p class="toy-text toy__size"></p>
+    <p class="toy-text toy__favorite"></p>
+  </div>
+</template>

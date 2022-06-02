@@ -1,0 +1,35 @@
+.greeting {
+  margin: 0 auto;
+  width: 593px;
+  height: 249px;
+  background: radial-gradient(118.88% 606.86% at 0% 0%, rgba(36, 197, 219, 0.15) 0%, rgba(36, 197, 219, 0) 100%);
+  backdrop-filter: blur(31px);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.greeting__text {
+  font-size: 53px;
+  line-height: 58px;
+  text-align: center;
+  text-transform: uppercase
+}
+
+.start__button {
+  color: #fff;
+  padding: 20px 120px;
+  display: inline-flex;
+  text-decoration: none;
+  margin-top: 126px;
+  font-size: 24px;
+  line-height: 29px;
+  background: radial-gradient(118.88% 606.86% at 0% 0%, rgba(36, 197, 219, 0.15) 0%, rgba(36, 197, 219, 0) 100%);
+  backdrop-filter: blur(31px);
+  border-radius: 30px;
+}
+
+.start__button:hover {
+  background-color: #192F2D;
+}

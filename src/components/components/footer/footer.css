@@ -1,0 +1,34 @@
+.footer {
+  background-color: #192F2D;
+  padding: 5px;
+  padding-bottom: 5px;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__rss {
+  display: block;
+  width: 120px;
+  height: 45px;
+  background-image: url(../../../assets/svg/rss.svg);
+  background-repeat: no-repeat;
+}
+
+.footer__text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+}
+.footer__text a {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  color: #1fc;
+}

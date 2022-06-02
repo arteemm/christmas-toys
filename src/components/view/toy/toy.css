@@ -1,0 +1,44 @@
+h3 {
+  margin: 0;
+}
+
+main {
+  background-color: #192F2D;
+}
+
+.toy {
+  width: 222px;
+  height: 322px;
+  background: radial-gradient(109.56% 109.56% at 0% -2.94%, rgba(255, 255, 255, 0.5) 0%, rgba(179, 246, 255, 0.5) 100%);
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+  padding: 18px 16px;
+}
+
+.toy-favorite {
+  background: radial-gradient(109.56% 109.56% at 0% -2.94%, rgba(255, 255, 255, 0.5) 0%, rgba(193, 255, 79, 0.5) 100%);
+}
+
+.toy__title {
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.toy__image {
+  width: 85px;
+  height: 107px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0 auto;
+  margin-bottom: 17px;
+}
+
+.toy-text {
+  font-family: 'Roboto' ,sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  margin-top: 12px;
+}
